@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Flix
+    </title>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap"
+        rel="stylesheet">
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- BOX ICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- APP CSS -->
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="audioplayer.css" />
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <div class="nav-wrapper">
+        <div class="container">
+            <div class="nav">
+                <a href="#" class="logo">
+                    <i class='bx bx-music bx-tada main-color'></i>Bug<span class="main-color">s</span>
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Music</a></li>
+                    <li><a href="#">Top</a></li>
+                    <li><a href="#">Search</a></li>
+                    <li>
+                        <a href="#" class="btn btn-hover">
+                            <span>Sign in</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="avatar-menu dropdown">
+                    <img src="https://i.pinimg.com/originals/f6/45/cf/f645cf871f719df318041444872e6ee1.jpg" alt=""
+                        class="dropdown-toggle" data-toggle="user-menu">
+                    <ul id="user-menu" class="dropdown-menu">
+                        <li class="dropdown-menu-item">
+                            <a href="" class="dropdown-menu-link">
+                                <div>
+                                    <i class='bx bx-user'></i>
+                                </div>
+                                <span>Profile</span>
+                            </a>
+                        </li>
+                        <li class="dropdown-menu-item">
+                            <a href="" class="dropdown-menu-link">
+                                <div>
+                                    <i class='bx bx-headphone'></i>
+                                </div>
+                                <span>My songs</span>
+                            </a>
+                        </li>
+                        <li class="dropdown-menu-item">
+                            <a href="" class="dropdown-menu-link">
+                                <div>
+                                    <i class='bx bx-log-out'></i>
+                                </div>
+                                <span>Log out</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- MOBILE MENU TOGGLE -->
+                <div class="hamburger-menu" id="hamburger-menu">
+                    <div class="hamburger"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END NAV -->
+    <!-- HERO SECTION -->
+    <div class="hero-section">
+        <!-- HERO SLIDE -->
+        <div class="hero-slide">
+            <div class="owl-carousel carousel-nav-center" id="hero-carousel">
+                <!-- SLIDE ITEM -->
+                <div class="hero-slide-item">
+                    <img src="./images/black-banner.png" alt="">
+                    <div class="overlay"></div>
+                    <div class="hero-slide-item-content">
+                        <div class="item-content-wraper">
+                            <div class="item-content-title top-down">
+                                Black Panther
+                            </div>
+                            <div class="item-content-description top-down delay-2">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, possimus eius. Deserunt
+                                non odit, cum vero reprehenderit laudantium odio vitae autem quam, incidunt molestias
+                                ratione mollitia accusantium, facere ab suscipit.
+                            </div>
+                            <div class="item-action top-down delay-4">
+                                <a href="#" class="btn btn-hover">
+                                    <i class="bx bxs-right-arrow"></i>
+                                    <span>Watch now</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END SLIDE ITEM -->
+                <!-- SLIDE ITEM -->
+                <div class="hero-slide-item">
+                    <img src="./images/supergirl-banner.jpg" alt="">
+                    <div class="overlay"></div>
+                    <div class="hero-slide-item-content">
+                        <div class="item-content-wraper">
+                            <div class="item-content-title top-down">
+                                Supergirl
+                            </div>
+                            <div class="item-content-description top-down delay-2">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, possimus eius. Deserunt
+                                non odit, cum vero reprehenderit laudantium odio vitae autem quam, incidunt molestias
+                                ratione mollitia accusantium, facere ab suscipit.
+                            </div>
+                            <div class="item-action top-down delay-4">
+                                <a href="#" class="btn btn-hover">
+                                    <i class="bx bxs-right-arrow"></i>
+                                    <span>Watch now</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END SLIDE ITEM -->
+                <!-- SLIDE ITEM -->
+                <div class="hero-slide-item">
+                    <img src="./images/wanda-banner.jpg" alt="">
+                    <div class="overlay"></div>
+                    <div class="hero-slide-item-content">
+                        <div class="item-content-wraper">
+                            <div class="item-content-title top-down">
+                                Wanda Vision
+                            </div>
+                            <div class="item-content-description top-down delay-2">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, possimus eius. Deserunt
+                                non odit, cum vero reprehenderit laudantium odio vitae autem quam, incidunt molestias
+                                ratione mollitia accusantium, facere ab suscipit.
+                            </div>
+                            <div class="item-action top-down delay-4">
+                                <a href="#" class="btn btn-hover">
+                                    <i class="bx bxs-right-arrow"></i>
+                                    <span>Watch now</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END SLIDE ITEM -->
+            </div>
+        </div>
+        <!-- END HERO SLIDE -->
+    </div>
+    <!-- END HERO SECTION -->
+
+    <!-- LATEST SERIES SECTION -->
+    <div class="section">
+        <div class="container">
+            <div class="section-header">
+                news
+            </div>
+            <div class="movies-slide carousel-nav-center owl-carousel">
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                    <img src="./images/series/supergirl.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Supergirl
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                    <img src="./images/series/penthouses.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Penthouses
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                    <img src="./images/series/mandalorian.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Mandalorian
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                    <img src="./images/series/the-falcon.webp" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            The Falcon And The Winter Soldier
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                <!-- MOVIE ITEM -->
+                <a href="#" class="movie-item">
+                    <img src="./images/series/wanda.png" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Wanda Vision
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+            </div>
+        </div>
+    </div>
+    <!-- END LATEST SERIES SECTION -->
+
+    <!-- SECTION MUSIC -->
+    <div class="section">
+        <div class="container">
+            <div class="section-header">
+                music
+            </div>
+            <div class="music-container">
+                <div class="chart-music">
+                    <table class="music-list-chart">
+                        <tr>
+                            <td style="width:10%">
+                                <div class="chart-stt stt-top-1">1St</div>
+                            </td>
+                            <td style="width:35%;text-align: left;">
+                                <div class="chart-info">
+                                    <div class="chart-thumbnail"><img
+                                            src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/8/f/c/6/8fc69bb4b0b8fb6fd647927286c0c478.jpg"
+                                            alt=""></div>
+                                    <div class="chart-name">
+                                        <a href=""><span class="chart-title">God 4 u</span></a>
+                                        <a href=""><span class="chart-singer">Olivia Rodrigo</span></a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td style="width:25%">
+                                <span>03:45</span>
+                            </td>
+                            <td style="width:15%">
+                                <span class="chart-like">
+                                    <i class='bx bx-heart red'></i> 114,22
+                                </span>
+                            </td>
+                            <td style="width:10%" class="chart-action">
+                                <a href="" class="btn-link btn-order"> Buy 2$</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="anime-bubbe" style="width:10%">
+                                <div class="chart-stt stt-top-2">2Nd</div>
+                            </td>
+                            <td style="width:35%;text-align: left;">
+                                <div class="chart-info">
+                                    <div class="chart-thumbnail"><img
+                                            src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/8/f/c/6/8fc69bb4b0b8fb6fd647927286c0c478.jpg"
+                                            alt=""></div>
+                                    <div class="chart-name">
+                                        <a href=""><span class="chart-title">God 4 u</span></a>
+                                        <a href=""><span class="chart-singer">Olivia Rodrigo</span></a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td style="width:25%">
+                                <span>03:45</span>
+                            </td>
+                            <td style="width:15%">
+                                <span class="chart-like">
+                                    <i class='bx bx-heart red'></i> 114,22
+                                </span>
+                            </td>
+                            <td style="width:10%" class="chart-action">
+                                <a href="" class="btn-link btn-order"> Buy 2$</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="anime-bubbe" style="width:10%">
+                                <div class="chart-stt stt-top-3">3Rd</div>
+                            </td>
+                            <td style="width:35%;text-align: left;">
+                                <div class="chart-info">
+                                    <div class="chart-thumbnail"><img
+                                            src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/8/f/c/6/8fc69bb4b0b8fb6fd647927286c0c478.jpg"
+                                            alt=""></div>
+                                    <div class="chart-name">
+                                        <a href=""><span class="chart-title">God 4 u</span></a>
+                                        <a href=""><span class="chart-singer">Olivia Rodrigo</span></a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td style="width:25%">
+                                <span>03:45</span>
+                            </td>
+                            <td style="width:15%">
+                                <span class="chart-like">
+                                    <i class='bx bx-heart red'></i> 114,22
+                                </span>
+                            </td>
+                            <td style="width:10%" class="chart-action">
+                                <a href="" data-src="music2.mp3" class="btn-link btn-play"><i
+                                        class='bx bx-play'></i>Play</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="anime-bubbe" style="width:10%">
+                                <div class="chart-stt">4</div>
+                            </td>
+                            <td style="width:35%;text-align: left;">
+                                <div class="chart-info">
+                                    <div class="chart-thumbnail"><img
+                                            src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/8/f/c/6/8fc69bb4b0b8fb6fd647927286c0c478.jpg"
+                                            alt=""></div>
+                                    <div class="chart-name">
+                                        <a href=""><span class="chart-title">God 4 u</span></a>
+                                        <a href=""><span class="chart-singer">Olivia Rodrigo</span></a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td style="width:25%">
+                                <span>03:45</span>
+                            </td>
+                            <td style="width:15%">
+                                <span class="chart-like">
+                                    <i class='bx bx-heart red'></i> 114,22
+                                </span>
+                            </td>
+                            <td style="width:10%" class="chart-action">
+                                <a href="" data-src="audio.mp3" class="btn-link btn-play"><i
+                                        class='bx bx-play'></i>Play</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="anime-bubbe" style="width:10%">
+                                <div class="chart-stt">5</div>
+                            </td>
+                            <td style="width:35%;text-align: left;">
+                                <div class="chart-info">
+                                    <div class="chart-thumbnail"><img
+                                            src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/8/f/c/6/8fc69bb4b0b8fb6fd647927286c0c478.jpg"
+                                            alt=""></div>
+                                    <div class="chart-name">
+                                        <a href=""><span class="chart-title">God 4 u</span></a>
+                                        <a href=""><span class="chart-singer">Olivia Rodrigo</span></a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td style="width:25%">
+                                <span>03:45</span>
+                            </td>
+                            <td style="width:15%">
+                                <span class="chart-like">
+                                    <i class='bx bx-heart red'></i> 114,22
+                                </span>
+                            </td>
+                            <td style="width:10%" class="chart-action">
+                                <a href="" class="btn-link btn-order"> Buy 2$</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END SECTION MUSIC -->
+
+    <!-- FOOTER SECTION -->
+    <footer class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-md-6 col-sm-12">
+                    <div class="content">
+                        <a href="#" class="logo">
+                            <i class='bx bx-movie-play bx-tada main-color'></i>Fl<span class="main-color">i</span>x
+                        </a>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut veniam ex quos hic id nobis
+                            beatae earum sapiente! Quod ipsa exercitationem officiis non error illum minima iusto et.
+                            Dolores, quibusdam?
+                        </p>
+                        <div class="social-list">
+                            <a href="#" class="social-item">
+                                <i class="bx bxl-facebook"></i>
+                            </a>
+                            <a href="#" class="social-item">
+                                <i class="bx bxl-twitter"></i>
+                            </a>
+                            <a href="#" class="social-item">
+                                <i class="bx bxl-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 col-md-6 col-sm-12">
+                    <div class="row">
+                        <div class="col-3 col-md-6 col-sm-6">
+                            <div class="content">
+                                <p><b>Flix</b></p>
+                                <ul class="footer-menu">
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">My profile</a></li>
+                                    <li><a href="#">Pricing plans</a></li>
+                                    <li><a href="#">Contacts</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-6 col-sm-6">
+                            <div class="content">
+                                <p><b>Browse</b></p>
+                                <ul class="footer-menu">
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">My profile</a></li>
+                                    <li><a href="#">Pricing plans</a></li>
+                                    <li><a href="#">Contacts</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-6 col-sm-6">
+                            <div class="content">
+                                <p><b>Help</b></p>
+                                <ul class="footer-menu">
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">My profile</a></li>
+                                    <li><a href="#">Pricing plans</a></li>
+                                    <li><a href="#">Contacts</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-6 col-sm-6">
+                            <div class="content">
+                                <p><b>Download app</b></p>
+                                <ul class="footer-menu">
+                                    <li>
+                                        <a href="#">
+                                            <img src="./images/google-play.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="./images/app-store.png" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END FOOTER SECTION -->
+
+    <!-- COPYRIGHT SECTION -->
+    <div class="copyright">
+        Copyright 2021 by HHD
+    </div>
+    <!-- END COPYRIGHT SECTION -->
+
+    <!-- SECTION PLAY MUSIC -->
+    <div class="player-control">
+        <div class="player-control_left">
+            <div class="level-item">
+                <div class="media">
+                    <div class="media-left anime-bubbe">
+                        <a href=""><img class="thumbnail-music is-rounded"
+                                src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/5/1/0/5/5105ad15cebc8a0d3d8a055f0d88764e.jpg"
+                                alt=""></a>
+                        <svg viewBox="0 0 512 512" class="note note-1">
+                            <path
+                                d="M470.38 1.51L150.41 96A32 32 0 0 0 128 126.51v261.41A139 139 0 0 0 96 384c-53 0-96 28.66-96 64s43 64 96 64 96-28.66 96-64V214.32l256-75v184.61a138.4 138.4 0 0 0-32-3.93c-53 0-96 28.66-96 64s43 64 96 64 96-28.65 96-64V32a32 32 0 0 0-41.62-30.49z">
+                            </path>
+                        </svg>
+                        <svg viewBox="0 0 384 512" class="note note-2">
+                            <path
+                                d="M310.94 1.33l-96.53 28.51A32 32 0 0 0 192 60.34V360a148.76 148.76 0 0 0-48-8c-61.86 0-112 35.82-112 80s50.14 80 112 80 112-35.82 112-80V148.15l73-21.39a32 32 0 0 0 23-30.71V32a32 32 0 0 0-41.06-30.67z">
+                            </path>
+                        </svg>
+                        <svg viewBox="0 0 512 512" class="note note-3">
+                            <path
+                                d="M470.38 1.51L150.41 96A32 32 0 0 0 128 126.51v261.41A139 139 0 0 0 96 384c-53 0-96 28.66-96 64s43 64 96 64 96-28.66 96-64V214.32l256-75v184.61a138.4 138.4 0 0 0-32-3.93c-53 0-96 28.66-96 64s43 64 96 64 96-28.65 96-64V32a32 32 0 0 0-41.62-30.49z">
+                            </path>
+                        </svg>
+                        <svg viewBox="0 0 384 512" class="note note-4">
+                            <path
+                                d="M310.94 1.33l-96.53 28.51A32 32 0 0 0 192 60.34V360a148.76 148.76 0 0 0-48-8c-61.86 0-112 35.82-112 80s50.14 80 112 80 112-35.82 112-80V148.15l73-21.39a32 32 0 0 0 23-30.71V32a32 32 0 0 0-41.06-30.67z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="media-content">
+                        <div class="media-title">
+                            <a href="">Say So (Snakehips Remix (Audio)) 4343 g fgf</a>
+                        </div>
+                        <div class="media-subtitle">
+                            <a href="">Doja Cat</a>
+                        </div>
+                    </div>
+                </div>
+                <span class="media-right zm-tooltip"><i class='bx bx-dots-horizontal-rounded'></i>
+                    <div class="zm-contextMenu">
+                        <div class="menu">
+                            <ul class="menu-list">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href=""><img class="is-40-40"
+                                                src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/5/1/0/5/5105ad15cebc8a0d3d8a055f0d88764e.jpg"
+                                                alt=""></a>
+                                    </div>
+                                    <div class="media-content">
+                                        <div class="media-title">
+                                            <a href="">Say So</a>
+                                        </div>
+                                        <div class="media-subtitle light-text text-message">
+                                            <div class="song-stats">
+                                                <div class="stat-item"><i class='bx bx-heart' ></i> <span>267</span></div>
+                                                <div class="stat-item"><i class='bx bx-headphone'></i> <span>3K</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                            <ul class="menu-list">
+                                <div class="group-button-menu">
+                                    <div class="group-button-list">
+                                        <button class="zm-btn"><i class='bx bx-download' ></i><span>Tải xuống</span></button>
+                                        <button class="zm-btn" tabindex="0"><i class='bx bx-note'></i><span>Lời bài hát</span></button>
+                                    </div>
+                                </div>
+                            </ul>
+                            <ul class="menu-list">
+                                <li><span><button class="zm-btn button" tabindex="0"><i class='bx bx-plus' ></i><span>Thêm vào playlist</span></button></span></li>
+                                <li><button class="zm-btn button zm-copy" tabindex="0"><i class='bx bx-link' ></i></i><span>Sao chép link</span></button></li>
+                                <li>
+                                    <div class="menu-list--submenu">
+                                    <button class="zm-btn button" tabindex="0"><i class='bx bx-share' ></i><span>Chia sẻ</span><i class="icon ic-go-right"></i></button>
+                                    <div class="menu share-content submenu-content">
+                                        <ul class="menu-list">
+                                            <li><button class="zm-btn button" tabindex="0"><i class='bx bxl-facebook'></i><span>Facebook</span></button></li>
+                                            <li><button class="zm-btn button" tabindex="0"><i class='bx bxl-twitter' ></i><span>Twitter</span></button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                </span>
+            </div>
+        </div>
+        <div class="player-control_center">
+
+        </div>
+        <div class="player-control_right">
+            <div class="player_control_action">
+                <a href=""><i class='bx bx-skip-previous'></i></a>
+                <a href=""><i class='bx bx-skip-next'></i></a>
+                <a href="" class="like-song"><i class='bx bx-heart'></i> <span>22,11</span> </a>
+            </div>
+        </div>
+    </div>
+    <!-- END SECTION PLAY MUSIC -->
+
+    <!-- modal -->
+    <div class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Comment</h3>
+                <button class="modal-close"><i class='bx bx-x-circle'></i></button>
+            </div>
+            <div class="add-lyric-content">
+                <textarea name="" rows="15" disabled>
+                Vứt, vứt buồn phiền vào đây
+                Vứt chiếc hộp này đi
+                Cho một đêm đã qua
+                Cho từng lời được nói
+                Mặt trời chói thêm nắng lên da
+                Dặn bản thân liên tục bước tới
+                Vì trong góc tối còn người bên ta
+                Vứt buồn phiền vào đây
+                Vứt, vứt buồn phiền vào đây
+                Vứt buồn phiền vào đây
+                Vứt, vứt buồn phiền vào đây
+                Vứt chiếc hộp này đi
+                Và ngày mới trôi qua nào hay
+                Vứt buồn phiền vào đây
+                Ngày mới trôi qua nào hay
+                </textarea>
+            </div>
+        </div>
+    </div>
+
+    <!-- OWL CAROUSEL -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+    <!-- APP SCRIPT -->
+    <script src="./app.js"></script>
+    <script src="./js/audioplayer.js"></script>
+    <script>$(function () { $('audio').audioPlayer(); });</script>
+
+</body>
+
+</html>

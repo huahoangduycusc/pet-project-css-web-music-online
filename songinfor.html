@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Flix
+    </title>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap"
+        rel="stylesheet">
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <!-- BOX ICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- APP CSS -->
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <div class="nav-wrapper">
+        <div class="container">
+            <div class="nav">
+                <a href="#" class="logo">
+                    <i class='bx bx-music bx-tada main-color'></i>Fl<span class="main-color">i</span>x
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Music</a></li>
+                    <li><a href="#">Top</a></li>
+                    <li><a href="#">Search</a></li>
+                    <li>
+                        <a href="#" class="btn btn-hover login-btn">
+                            <span>Sign in</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- MOBILE MENU TOGGLE -->
+                <div class="hamburger-menu" id="hamburger-menu">
+                    <div class="hamburger"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END NAV -->
+
+    <!-- SECTION INFOR MUSIC -->
+    <div class="section section-sm">
+        <div class="sm-container">
+            <div class="section-header">Infomation</div>
+            <div class="song-details">
+                <div class="song-script flex">
+                    <div class="song-thumbnail">
+                        <img src="https://images.genius.com/146f35f3c7ecedfccb09c86ba0d8369f.1000x1000x1.jpg" alt="">
+                    </div>
+                    <div class="song-des">
+                        <h1 class="song-title">God 4 u</h1>
+                        <a href="">
+                            <h3 class="song-author">Olivia Rodrigo</h3>
+                        </a>
+                        <div><span>Release date</span> <span>06/21/2021</span></div>
+                        <div><span>Genre</span> <a href="" class="badge">dance</a></div>
+                        <div><span>Publisher</span> <a href=""></a>YG MUSIC</div>
+                        <div class="heart-like"><i class='bx bx-heart red'></i> <span>222</span></div>
+                    </div>
+                    <div class="song-order">
+                        <a href="" class="btn btn-buying"><i class='bx bx-play'></i>Play</a>
+                        <div class="song-left-right-details">
+                            <div><span>Unique listener</span> <span>22.00k</span></div>
+                            <div><span>Comment</span> <span>2.221</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="song-more-des">
+                    <div class="section-header">More</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis cum nisi temporibus? Hic
+                        consectetur cum iure perspiciatis,
+                        error obcaecati sit! Doloremque, quam. Ipsum dolores id sapiente fugit incidunt officia odio?
+                    </p>
+                </div>
+            </div>
+            <div class="empty-space"></div>
+            <div>
+                <form>
+                    <div class="box-comment">
+                        <h2>Leave a Comment</h2>
+                        <div class="box-comment-input">
+                            <textarea name="comment" rows="3" class="form-control" placeholder="Your content"
+                                v-model="form.message"></textarea>
+                        </div>
+                        <div class="box-comment-input">
+                            <button type="submit" class="btn btn-create">Post</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="empty-space"></div>
+                <div class="box">
+                    <div class="author-flex">
+                        <a href="" class="author-flex-img"><img
+                                src="https://secure.gravatar.com/avatar/578816ffce137858255eff793b54ce91?s=180&d=mm&r=g"
+                                alt=""></a>
+                        <div class="author-flex-info">
+                            <a href="" class="author-flex-text">Hoang Duy</a>
+                            <div class="simple-text">
+                                <p>
+                                    Emellie Watson is a short story author, novelist, and award-winning poet. She loves
+                                    to write.
+                                    While not writing, she usually watches tv shows.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END SECTION INFOR MUSIC -->
+
+    <!-- FOOTER SECTION -->
+    <footer class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-md-6 col-sm-12">
+                    <div class="content">
+                        <a href="#" class="logo">
+                            <i class='bx bx-movie-play bx-tada main-color'></i>Fl<span class="main-color">i</span>x
+                        </a>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut veniam ex quos hic id nobis
+                            beatae earum sapiente! Quod ipsa exercitationem officiis non error illum minima iusto et.
+                            Dolores, quibusdam?
+                        </p>
+                        <div class="social-list">
+                            <a href="#" class="social-item">
+                                <i class="bx bxl-facebook"></i>
+                            </a>
+                            <a href="#" class="social-item">
+                                <i class="bx bxl-twitter"></i>
+                            </a>
+                            <a href="#" class="social-item">
+                                <i class="bx bxl-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 col-md-6 col-sm-12">
+                    <div class="row">
+                        <div class="col-3 col-md-6 col-sm-6">
+                            <div class="content">
+                                <p><b>Flix</b></p>
+                                <ul class="footer-menu">
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">My profile</a></li>
+                                    <li><a href="#">Pricing plans</a></li>
+                                    <li><a href="#">Contacts</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-6 col-sm-6">
+                            <div class="content">
+                                <p><b>Browse</b></p>
+                                <ul class="footer-menu">
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">My profile</a></li>
+                                    <li><a href="#">Pricing plans</a></li>
+                                    <li><a href="#">Contacts</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-6 col-sm-6">
+                            <div class="content">
+                                <p><b>Help</b></p>
+                                <ul class="footer-menu">
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">My profile</a></li>
+                                    <li><a href="#">Pricing plans</a></li>
+                                    <li><a href="#">Contacts</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-6 col-sm-6">
+                            <div class="content">
+                                <p><b>Download app</b></p>
+                                <ul class="footer-menu">
+                                    <li>
+                                        <a href="#">
+                                            <img src="./images/google-play.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="./images/app-store.png" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END FOOTER SECTION -->
+
+    <!-- COPYRIGHT SECTION -->
+    <div class="copyright">
+        Copyright 2021 by HHD
+    </div>
+    <!-- END COPYRIGHT SECTION -->
+    <div class="phanhoi-container">
+        <form action="" method="post" class="phanhoi-form">
+            <div class="phanhoi-title">
+                <img src="./images/login.png" alt="">
+            </div>
+            <div class="phanhoi-bg">
+                <div class="phanhoi-error">
+                    eeee
+                </div>
+                <div class="phanhoi-box">
+                    <p>Username</p>
+                    <input type="text" name="username" id="" placeholder="Username" required>
+                </div>
+                <div class="phanhoi-box">
+                    <p>Password</p>
+                    <input type="password" name="password" id="" placeholder="password" required>
+                </div>
+                <div class="phanhoi-box">
+                    <button type="submit">Sign in</button>
+                </div>
+                <div class="phanhoi-end center">
+                    You don't have an account ? <a href="">Register now</a>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- SCRIPT -->
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- OWL CAROUSEL -->
+    <!-- APP SCRIPT -->
+    <script src="app.js"></script>
+
+</body>
+
+</html>

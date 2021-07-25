@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Flix
+    </title>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap"
+        rel="stylesheet">
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- BOX ICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- APP CSS -->
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="audioplayer.css" />
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <div class="nav-wrapper">
+        <div class="container">
+            <div class="nav">
+                <a href="#" class="logo">
+                    <i class='bx bx-music bx-tada main-color'></i>Bug<span class="main-color">s</span>
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Music</a></li>
+                    <li><a href="#">Top</a></li>
+                    <li><a href="#">Search</a></li>
+                    <li>
+                        <a href="#" class="btn btn-hover">
+                            <span>Sign in</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="avatar-menu dropdown">
+                    <img src="https://i.pinimg.com/originals/f6/45/cf/f645cf871f719df318041444872e6ee1.jpg" alt=""
+                        class="dropdown-toggle" data-toggle="user-menu">
+                    <ul id="user-menu" class="dropdown-menu">
+                        <li class="dropdown-menu-item">
+                            <a href="" class="dropdown-menu-link">
+                                <div>
+                                    <i class='bx bx-user'></i>
+                                </div>
+                                <span>Profile</span>
+                            </a>
+                        </li>
+                        <li class="dropdown-menu-item">
+                            <a href="" class="dropdown-menu-link">
+                                <div>
+                                    <i class='bx bx-headphone'></i>
+                                </div>
+                                <span>My songs</span>
+                            </a>
+                        </li>
+                        <li class="dropdown-menu-item">
+                            <a href="" class="dropdown-menu-link">
+                                <div>
+                                    <i class='bx bx-log-out'></i>
+                                </div>
+                                <span>Log out</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- MOBILE MENU TOGGLE -->
+                <div class="hamburger-menu" id="hamburger-menu">
+                    <div class="hamburger"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END NAV -->
+    <!-- LATEST SERIES SECTION -->
+    <div class="section" style="margin-bottom: 20px;">
+        <div class="container">
+            <div class="section-header">
+                news
+            </div>
+            <div class="news-slide carousel-nav-center owl-carousel">
+                <!-- MOVIE ITEM -->
+                <a href="#" class="news-item">
+                    <img src="https://blog.bandlab.com/uploads/2018/08/edm-music-guide.jpg" alt="">
+                    <div class="news-item-content">
+                        <div class="news-item-catgeory">
+                            <span class="span-category">Game</span>
+                            <span class="news-item-times">1 day ago</span>
+                        </div>
+                        <div class="news-item-title">
+                            Touch and mobile optimized with swipe, drag and pinch-to-zoom gestures
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                <a href="#" class="news-item">
+                    <img src="https://blog.bandlab.com/uploads/2018/08/edm-music-guide.jpg" alt="">
+                    <div class="news-item-content">
+                        <div class="news-item-catgeory">
+                            <span class="span-category">Game</span>
+                            <span class="news-item-times">1 day ago</span>
+                        </div>
+                        <div class="news-item-title">
+                            Touch and mobile optimized with swipe, drag and pinch-to-zoom gestures
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                <a href="#" class="news-item">
+                    <img src="https://blog.bandlab.com/uploads/2018/08/edm-music-guide.jpg" alt="">
+                    <div class="news-item-content">
+                        <div class="news-item-catgeory">
+                            <span class="span-category">Game</span>
+                            <span class="news-item-times">1 day ago</span>
+                        </div>
+                        <div class="news-item-title">
+                            Touch and mobile optimized with swipe, drag and pinch-to-zoom gestures
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                <a href="#" class="news-item">
+                    <img src="https://blog.bandlab.com/uploads/2018/08/edm-music-guide.jpg" alt="">
+                    <div class="news-item-content">
+                        <div class="news-item-catgeory">
+                            <span class="span-category">Game</span>
+                            <span class="news-item-times">1 day ago</span>
+                        </div>
+                        <div class="news-item-title">
+                            Touch and mobile optimized with swipe, drag and pinch-to-zoom gestures
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                <a href="#" class="news-item">
+                    <img src="https://blog.bandlab.com/uploads/2018/08/edm-music-guide.jpg" alt="">
+                    <div class="news-item-content">
+                        <div class="news-item-catgeory">
+                            <span class="span-category">Game</span>
+                            <span class="news-item-times">1 day ago</span>
+                        </div>
+                        <div class="news-item-title">
+                            Touch and mobile optimized with swipe, drag and pinch-to-zoom gestures
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+                <a href="#" class="news-item">
+                    <img src="https://blog.bandlab.com/uploads/2018/08/edm-music-guide.jpg" alt="">
+                    <div class="news-item-content">
+                        <div class="news-item-catgeory">
+                            <span class="span-category">Game</span>
+                            <span class="news-item-times">1 day ago</span>
+                        </div>
+                        <div class="news-item-title">
+                            Touch and mobile optimized with swipe, drag and pinch-to-zoom gestures
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+            </div>
+        </div>
+    </div>
+    <!-- END LATEST SERIES SECTION -->
+    <div class="section-chart">
+        <div class="bg-blur"></div>
+        <div class="bg-alpha"></div>
+        <div class="container">
+            <div class="section-top">Rankings</div>
+            <div class="row">
+                <div class="col-4 col-md-6 col-sm-12">
+                    <div class="week-chart">
+                        <div class="chart-header">
+                            <a href="">Today</a>
+                        </div>
+                        <table class="list-week-chart" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td style="width:10%">
+                                    <div class="chart-stt stt-top-1">1</div>
+                                </td>
+                                <td style="width:35%;text-align: left;">
+                                    <div class="chart-info">
+                                        <div class="chart-thumbnail"><img
+                                                src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/8/f/c/6/8fc69bb4b0b8fb6fd647927286c0c478.jpg"
+                                                alt=""></div>
+                                        <div class="chart-name">
+                                            <a href=""><span class="chart-title">God 4 u</span></a>
+                                            <a href=""><span class="chart-singer">Olivia Rodrigo</span></a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:10%">
+                                    <div class="chart-stt stt-top-2">2</div>
+                                </td>
+                                <td style="width:35%;text-align: left;">
+                                    <div class="chart-info">
+                                        <div class="chart-thumbnail"><img
+                                                src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/8/f/c/6/8fc69bb4b0b8fb6fd647927286c0c478.jpg"
+                                                alt=""></div>
+                                        <div class="chart-name">
+                                            <a href=""><span class="chart-title">God 4 u</span></a>
+                                            <a href=""><span class="chart-singer">Olivia Rodrigo</span></a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:10%">
+                                    <div class="chart-stt stt-top-3">3</div>
+                                </td>
+                                <td style="width:35%;text-align: left;">
+                                    <div class="chart-info">
+                                        <div class="chart-thumbnail"><img
+                                                src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/8/f/c/6/8fc69bb4b0b8fb6fd647927286c0c478.jpg"
+                                                alt=""></div>
+                                        <div class="chart-name">
+                                            <a href=""><span class="chart-title">God 4 u</span></a>
+                                            <a href=""><span class="chart-singer">Olivia Rodrigo</span></a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:10%">
+                                    <div class="chart-stt">4</div>
+                                </td>
+                                <td style="width:35%;text-align: left;">
+                                    <div class="chart-info">
+                                        <div class="chart-thumbnail"><img
+                                                src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/8/f/c/6/8fc69bb4b0b8fb6fd647927286c0c478.jpg"
+                                                alt=""></div>
+                                        <div class="chart-name">
+                                            <a href=""><span class="chart-title">God 4 u</span></a>
+                                            <a href=""><span class="chart-singer">Olivia Rodrigo</span></a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:10%">
+                                    <div class="chart-stt">5</div>
+                                </td>
+                                <td style="width:35%;text-align: left;">
+                                    <div class="chart-info">
+                                        <div class="chart-thumbnail"><img
+                                                src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/8/f/c/6/8fc69bb4b0b8fb6fd647927286c0c478.jpg"
+                                                alt=""></div>
+                                        <div class="chart-name">
+                                            <a href=""><span class="chart-title">God 4 u</span></a>
+                                            <a href=""><span class="chart-singer">Olivia Rodrigo</span></a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="is-center">
+                            <a href="" class="show-all">See more</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- col - 4 -->
+                <div class="col-4 col-md-6 col-sm-12">
+                    <div class="week-chart">
+                        <div class="chart-header">
+                            <a href="">Weekly</a>
+                        </div>
+                        <table class="list-week-chart" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td style="width:10%">
+                                    <div class="chart-stt stt-top-1">1</div>
+                                </td>
+                                <td style="width:35%;text-align: left;">
+                                    <div class="chart-info">
+                                        <div class="chart-thumbnail"><img
+                                                src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/8/f/c/6/8fc69bb4b0b8fb6fd647927286c0c478.jpg"
+                                                alt=""></div>
+                                        <div class="chart-name">
+                                            <a href=""><span class="chart-title">God 4 u</span></a>
+                                            <a href=""><span class="chart-singer">Olivia Rodrigo</span></a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:10%">
+                                    <div class="chart-stt stt-top-2">2</div>
+                                </td>
+                                <td style="width:35%;text-align: left;">
+                                    <div class="chart-info">
+                                        <div class="chart-thumbnail"><img
+                                                src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/8/f/c/6/8fc69bb4b0b8fb6fd647927286c0c478.jpg"
+                                                alt=""></div>
+                                        <div class="chart-name">
+                                            <a href=""><span class="chart-title">God 4 u</span></a>
+                                            <a href=""><span class="chart-singer">Olivia Rodrigo</span></a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:10%">
+                                    <div class="chart-stt stt-top-3">3</div>
+                                </td>
+                                <td style="width:35%;text-align: left;">
+                                    <div class="chart-info">
+                                        <div class="chart-thumbnail"><img
+                                                src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/8/f/c/6/8fc69bb4b0b8fb6fd647927286c0c478.jpg"
+                                                alt=""></div>
+                                        <div class="chart-name">
+                                            <a href=""><span class="chart-title">God 4 u</span></a>
+                                            <a href=""><span class="chart-singer">Olivia Rodrigo</span></a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:10%">
+                                    <div class="chart-stt">4</div>
+                                </td>
+                                <td style="width:35%;text-align: left;">
+                                    <div class="chart-info">
+                                        <div class="chart-thumbnail"><img
+                                                src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/8/f/c/6/8fc69bb4b0b8fb6fd647927286c0c478.jpg"
+                                                alt=""></div>
+                                        <div class="chart-name">
+                                            <a href=""><span class="chart-title">God 4 u</span></a>
+                                            <a href=""><span class="chart-singer">Olivia Rodrigo</span></a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:10%">
+                                    <div class="chart-stt">5</div>
+                                </td>
+                                <td style="width:35%;text-align: left;">
+                                    <div class="chart-info">
+                                        <div class="chart-thumbnail"><img
+                                                src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/8/f/c/6/8fc69bb4b0b8fb6fd647927286c0c478.jpg"
+                                                alt=""></div>
+                                        <div class="chart-name">
+                                            <a href=""><span class="chart-title">God 4 u</span></a>
+                                            <a href=""><span class="chart-singer">Olivia Rodrigo</span></a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="is-center">
+                            <a href="" class="show-all">See more</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- col - 4 -->
+                <div class="col-4 col-md-6 col-sm-12">
+                    <div class="week-chart">
+                        <div class="chart-header">
+                            <a href="">Month</a>
+                        </div>
+                        <table class="list-week-chart" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td style="width:10%">
+                                    <div class="chart-stt stt-top-1">1</div>
+                                </td>
+                                <td style="width:35%;text-align: left;">
+                                    <div class="chart-info">
+                                        <div class="chart-thumbnail"><img
+                                                src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/8/f/c/6/8fc69bb4b0b8fb6fd647927286c0c478.jpg"
+                                                alt=""></div>
+                                        <div class="chart-name">
+                                            <a href=""><span class="chart-title">God 4 u</span></a>
+                                            <a href=""><span class="chart-singer">Olivia Rodrigo</span></a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:10%">
+                                    <div class="chart-stt stt-top-2">2</div>
+                                </td>
+                                <td style="width:35%;text-align: left;">
+                                    <div class="chart-info">
+                                        <div class="chart-thumbnail"><img
+                                                src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/8/f/c/6/8fc69bb4b0b8fb6fd647927286c0c478.jpg"
+                                                alt=""></div>
+                                        <div class="chart-name">
+                                            <a href=""><span class="chart-title">God 4 u</span></a>
+                                            <a href=""><span class="chart-singer">Olivia Rodrigo</span></a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:10%">
+                                    <div class="chart-stt stt-top-3">3</div>
+                                </td>
+                                <td style="width:35%;text-align: left;">
+                                    <div class="chart-info">
+                                        <div class="chart-thumbnail"><img
+                                                src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/8/f/c/6/8fc69bb4b0b8fb6fd647927286c0c478.jpg"
+                                                alt=""></div>
+                                        <div class="chart-name">
+                                            <a href=""><span class="chart-title">God 4 u</span></a>
+                                            <a href=""><span class="chart-singer">Olivia Rodrigo</span></a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:10%">
+                                    <div class="chart-stt">4</div>
+                                </td>
+                                <td style="width:35%;text-align: left;">
+                                    <div class="chart-info">
+                                        <div class="chart-thumbnail"><img
+                                                src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/8/f/c/6/8fc69bb4b0b8fb6fd647927286c0c478.jpg"
+                                                alt=""></div>
+                                        <div class="chart-name">
+                                            <a href=""><span class="chart-title">God 4 u</span></a>
+                                            <a href=""><span class="chart-singer">Olivia Rodrigo</span></a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:10%">
+                                    <div class="chart-stt">5</div>
+                                </td>
+                                <td style="width:35%;text-align: left;">
+                                    <div class="chart-info">
+                                        <div class="chart-thumbnail"><img
+                                                src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/8/f/c/6/8fc69bb4b0b8fb6fd647927286c0c478.jpg"
+                                                alt=""></div>
+                                        <div class="chart-name">
+                                            <a href=""><span class="chart-title">God 4 u</span></a>
+                                            <a href=""><span class="chart-singer">Olivia Rodrigo</span></a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="is-center">
+                            <a href="" class="show-all">See more</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- col - 4 -->
+            </div>
+        </div>
+    </div>
+    <!-- SECTION MUSIC -->
+    <div class="section">
+        <div class="container">
+            <div class="section-header">
+                music
+            </div>
+            <div class="music-container">
+                <div class="chart-music">
+                    <table class="music-list-chart">
+                        <tr>
+                            <td style="width:10%">
+                                <div class="chart-stt stt-top-1">1St</div>
+                            </td>
+                            <td style="width:35%;text-align: left;">
+                                <div class="chart-info">
+                                    <div class="chart-thumbnail"><img
+                                            src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/8/f/c/6/8fc69bb4b0b8fb6fd647927286c0c478.jpg"
+                                            alt=""></div>
+                                    <div class="chart-name">
+                                        <a href=""><span class="chart-title">God 4 u</span></a>
+                                        <a href=""><span class="chart-singer">Olivia Rodrigo</span></a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td style="width:25%">
+                                <span>03:45</span>
+                            </td>
+                            <td style="width:15%">
+                                <span class="chart-like">
+                                    <i class='bx bx-heart red'></i> 114,22
+                                </span>
+                            </td>
+                            <td style="width:10%" class="chart-action">
+                                <a href="" class="btn-link btn-order"> Buy 2$</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="anime-bubbe" style="width:10%">
+                                <div class="chart-stt stt-top-2">2Nd</div>
+                            </td>
+                            <td style="width:35%;text-align: left;">
+                                <div class="chart-info">
+                                    <div class="chart-thumbnail"><img
+                                            src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/8/f/c/6/8fc69bb4b0b8fb6fd647927286c0c478.jpg"
+                                            alt=""></div>
+                                    <div class="chart-name">
+                                        <a href=""><span class="chart-title">God 4 u</span></a>
+                                        <a href=""><span class="chart-singer">Olivia Rodrigo</span></a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td style="width:25%">
+                                <span>03:45</span>
+                            </td>
+                            <td style="width:15%">
+                                <span class="chart-like">
+                                    <i class='bx bx-heart red'></i> 114,22
+                                </span>
+                            </td>
+                            <td style="width:10%" class="chart-action">
+                                <a href="" class="btn-link btn-order"> Buy 2$</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="anime-bubbe" style="width:10%">
+                                <div class="chart-stt stt-top-3">3Rd</div>
+                            </td>
+                            <td style="width:35%;text-align: left;">
+                                <div class="chart-info">
+                                    <div class="chart-thumbnail"><img
+                                            src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/8/f/c/6/8fc69bb4b0b8fb6fd647927286c0c478.jpg"
+                                            alt=""></div>
+                                    <div class="chart-name">
+                                        <a href=""><span class="chart-title">God 4 u</span></a>
+                                        <a href=""><span class="chart-singer">Olivia Rodrigo</span></a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td style="width:25%">
+                                <span>03:45</span>
+                            </td>
+                            <td style="width:15%">
+                                <span class="chart-like">
+                                    <i class='bx bx-heart red'></i> 114,22
+                                </span>
+                            </td>
+                            <td style="width:10%" class="chart-action">
+                                <a href="" data-src="music2.mp3" class="btn-link btn-play"><i
+                                        class='bx bx-play'></i>Play</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="anime-bubbe" style="width:10%">
+                                <div class="chart-stt">4</div>
+                            </td>
+                            <td style="width:35%;text-align: left;">
+                                <div class="chart-info">
+                                    <div class="chart-thumbnail"><img
+                                            src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/8/f/c/6/8fc69bb4b0b8fb6fd647927286c0c478.jpg"
+                                            alt=""></div>
+                                    <div class="chart-name">
+                                        <a href=""><span class="chart-title">God 4 u</span></a>
+                                        <a href=""><span class="chart-singer">Olivia Rodrigo</span></a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td style="width:25%">
+                                <span>03:45</span>
+                            </td>
+                            <td style="width:15%">
+                                <span class="chart-like">
+                                    <i class='bx bx-heart red'></i> 114,22
+                                </span>
+                            </td>
+                            <td style="width:10%" class="chart-action">
+                                <a href="" data-src="audio.mp3" class="btn-link btn-play"><i
+                                        class='bx bx-play'></i>Play</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="anime-bubbe" style="width:10%">
+                                <div class="chart-stt">5</div>
+                            </td>
+                            <td style="width:35%;text-align: left;">
+                                <div class="chart-info">
+                                    <div class="chart-thumbnail"><img
+                                            src="https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/8/f/c/6/8fc69bb4b0b8fb6fd647927286c0c478.jpg"
+                                            alt=""></div>
+                                    <div class="chart-name">
+                                        <a href=""><span class="chart-title">God 4 u</span></a>
+                                        <a href=""><span class="chart-singer">Olivia Rodrigo</span></a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td style="width:25%">
+                                <span>03:45</span>
+                            </td>
+                            <td style="width:15%">
+                                <span class="chart-like">
+                                    <i class='bx bx-heart red'></i> 114,22
+                                </span>
+                            </td>
+                            <td style="width:10%" class="chart-action">
+                                <a href="" class="btn-link btn-order"> Buy 2$</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END SECTION MUSIC -->
+
+    <!-- FOOTER SECTION -->
+    <footer class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-md-6 col-sm-12">
+                    <div class="content">
+                        <a href="#" class="logo">
+                            <i class='bx bx-movie-play bx-tada main-color'></i>Fl<span class="main-color">i</span>x
+                        </a>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut veniam ex quos hic id nobis
+                            beatae earum sapiente! Quod ipsa exercitationem officiis non error illum minima iusto et.
+                            Dolores, quibusdam?
+                        </p>
+                        <div class="social-list">
+                            <a href="#" class="social-item">
+                                <i class="bx bxl-facebook"></i>
+                            </a>
+                            <a href="#" class="social-item">
+                                <i class="bx bxl-twitter"></i>
+                            </a>
+                            <a href="#" class="social-item">
+                                <i class="bx bxl-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 col-md-6 col-sm-12">
+                    <div class="row">
+                        <div class="col-3 col-md-6 col-sm-6">
+                            <div class="content">
+                                <p><b>Flix</b></p>
+                                <ul class="footer-menu">
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">My profile</a></li>
+                                    <li><a href="#">Pricing plans</a></li>
+                                    <li><a href="#">Contacts</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-6 col-sm-6">
+                            <div class="content">
+                                <p><b>Browse</b></p>
+                                <ul class="footer-menu">
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">My profile</a></li>
+                                    <li><a href="#">Pricing plans</a></li>
+                                    <li><a href="#">Contacts</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-6 col-sm-6">
+                            <div class="content">
+                                <p><b>Help</b></p>
+                                <ul class="footer-menu">
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">My profile</a></li>
+                                    <li><a href="#">Pricing plans</a></li>
+                                    <li><a href="#">Contacts</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-6 col-sm-6">
+                            <div class="content">
+                                <p><b>Download app</b></p>
+                                <ul class="footer-menu">
+                                    <li>
+                                        <a href="#">
+                                            <img src="./images/google-play.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="./images/app-store.png" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END FOOTER SECTION -->
+
+    <!-- COPYRIGHT SECTION -->
+    <div class="copyright">
+        Copyright 2021 by HHD
+    </div>
+    <!-- END COPYRIGHT SECTION -->
+    <!-- OWL CAROUSEL -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+    <!-- APP SCRIPT -->
+    <script src="./app.js"></script>
+</body>
+
+</html>

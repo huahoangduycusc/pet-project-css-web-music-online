@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Flix
+    </title>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap"
+        rel="stylesheet">
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <!-- BOX ICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- APP CSS -->
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <div class="nav-wrapper">
+        <div class="container">
+            <div class="nav">
+                <a href="#" class="logo">
+                    <i class='bx bx-music bx-tada main-color'></i>Fl<span class="main-color">i</span>x
+                </a>
+                <div class="form-search">
+                    <form action="">
+                        <input type="text" placeholder="Enter song, artist ...">
+                        <button type="submit" class="btn-search"><i class='bx bx-search'></i></button>
+                    </form>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Music</a></li>
+                    <li><a href="#">Top</a></li>
+                    <li><a href="#">Search</a></li>
+                    <li>
+                        <a href="#" class="btn btn-hover login-btn">
+                            <span>Sign in</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- MOBILE MENU TOGGLE -->
+                <div class="hamburger-menu" id="hamburger-menu">
+                    <div class="hamburger"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END NAV -->
+
+    <!-- SECTION INFOR MUSIC -->
+    <div class="section section-sm">
+        <div class="profile-container">
+            <div class="profile-avatar">
+                <img src="https://i.pinimg.com/originals/f6/45/cf/f645cf871f719df318041444872e6ee1.jpg" alt="">
+            </div>
+            <div class="profile-content">
+                <h2 class="profile-name">
+                    Duy Hoang <i class='bx bx-male-sign'></i>
+                </h2>
+                <p><i class='bx bxs-location-plus'></i> Can tho</p>
+                <p><i class='bx bxs-bookmark-heart'></i> Love eating spicy food and making website.</p>
+                <p class="profile-controls">
+                    <a href="" class="btn btn-block bg-red"><i class='bx bx-block'></i> Block</a>
+                    <a href="" class="btn btn-block btn-setting" data-toggle="setting"><i class='bx bx-cog'></i> Setting</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section section-sm">
+        <div class="container">
+            <div class="row">
+                <div class="col-2 col-sm-12"></div>
+                <div class="col-8 col-sm-12">
+                    <div class="profile-diary">
+                        <div class="diary-title">
+                            Duyhoang's diary
+                        </div>
+                        <div class="diary-post">
+                            <a href="" class="btn btn-post" data-toggle="new-post"><i class='bx bx-pointer'></i> New post</a>
+                        </div>
+                    </div>
+                    <div class="profile-diary-list">
+                        <div class="media">
+                            <div class="media-left">
+                                <a href=""><img class="is-50-50 is-rounded"
+                                        src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/5/1/0/5/5105ad15cebc8a0d3d8a055f0d88764e.jpg"
+                                        alt=""></a>
+                            </div>
+                            <div class="media-content">
+                                <div class="media-title">
+                                    <a href="">Say So</a>
+                                    <span class="media-react">
+                                        - Feeling sad <img src="./images/icon/sad.svg" alt="">
+                                    </span>
+                                </div>
+                                <div class="media-subtitle light-text text-message">
+                                    <div class="media-play">
+                                        <span>Shared with</span> <a href=""><i class='bx bx-headphone bx-tada'></i> Kiss
+                                            me more - Dj docat</a>
+                                    </div>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi aliquam similique
+                                        eligendi voluptatibus odit, omnis cupiditate laudantium neque adipisci
+                                        voluptatem quaerat? Excepturi aut quisquam corporis sit magnam accusantium quis
+                                        aspernatur.</p>
+                                </div>
+                                <div class="diary-times">
+                                    <i class='bx bx-stopwatch'></i> <span>Just a moment</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- media -->
+                        <div class="media">
+                            <div class="media-left">
+                                <a href=""><img class="is-50-50 is-rounded"
+                                        src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/5/1/0/5/5105ad15cebc8a0d3d8a055f0d88764e.jpg"
+                                        alt=""></a>
+                            </div>
+                            <div class="media-content">
+                                <div class="media-title">
+                                    <a href="">Say So</a>
+                                </div>
+                                <div class="media-subtitle light-text text-message">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi aliquam similique
+                                        eligendi voluptatibus odit, omnis cupiditate laudantium neque adipisci
+                                        voluptatem quaerat? Excepturi aut quisquam corporis sit magnam accusantium quis
+                                        aspernatur.</p>
+                                </div>
+                                <div class="diary-times">
+                                    <i class='bx bx-stopwatch'></i> <span>Just a moment</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- media -->
+                        <div class="media">
+                            <div class="media-left">
+                                <a href=""><img class="is-50-50 is-rounded"
+                                        src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/5/1/0/5/5105ad15cebc8a0d3d8a055f0d88764e.jpg"
+                                        alt=""></a>
+                            </div>
+                            <div class="media-content">
+                                <div class="media-title">
+                                    <a href="">Say So</a>
+                                </div>
+                                <div class="media-subtitle light-text text-message">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi aliquam similique
+                                        eligendi voluptatibus odit, omnis cupiditate laudantium neque adipisci
+                                        voluptatem quaerat? Excepturi aut quisquam corporis sit magnam accusantium quis
+                                        aspernatur.</p>
+                                </div>
+                                <div class="diary-times">
+                                    <i class='bx bx-stopwatch'></i> <span>Just a moment</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- media -->
+                    </div>
+                </div>
+                <!-- col  -->
+                <div class="col-2 col-sm-12">
+                </div>
+            </div>
+            <!-- end row -->
+        </div>
+    </div>
+
+    <!-- FOOTER SECTION -->
+    <footer class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-md-6 col-sm-12">
+                    <div class="content">
+                        <a href="#" class="logo">
+                            <i class='bx bx-movie-play bx-tada main-color'></i>Fl<span class="main-color">i</span>x
+                        </a>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut veniam ex quos hic id nobis
+                            beatae earum sapiente! Quod ipsa exercitationem officiis non error illum minima iusto et.
+                            Dolores, quibusdam?
+                        </p>
+                        <div class="social-list">
+                            <a href="#" class="social-item">
+                                <i class="bx bxl-facebook"></i>
+                            </a>
+                            <a href="#" class="social-item">
+                                <i class="bx bxl-twitter"></i>
+                            </a>
+                            <a href="#" class="social-item">
+                                <i class="bx bxl-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 col-md-6 col-sm-12">
+                    <div class="row">
+                        <div class="col-3 col-md-6 col-sm-6">
+                            <div class="content">
+                                <p><b>Flix</b></p>
+                                <ul class="footer-menu">
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">My profile</a></li>
+                                    <li><a href="#">Pricing plans</a></li>
+                                    <li><a href="#">Contacts</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-6 col-sm-6">
+                            <div class="content">
+                                <p><b>Browse</b></p>
+                                <ul class="footer-menu">
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">My profile</a></li>
+                                    <li><a href="#">Pricing plans</a></li>
+                                    <li><a href="#">Contacts</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-6 col-sm-6">
+                            <div class="content">
+                                <p><b>Help</b></p>
+                                <ul class="footer-menu">
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">My profile</a></li>
+                                    <li><a href="#">Pricing plans</a></li>
+                                    <li><a href="#">Contacts</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-6 col-sm-6">
+                            <div class="content">
+                                <p><b>Download app</b></p>
+                                <ul class="footer-menu">
+                                    <li>
+                                        <a href="#">
+                                            <img src="./images/google-play.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="./images/app-store.png" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END FOOTER SECTION -->
+
+        <!-- modal -->
+        <div class="modal" id="setting">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Comment</h3>
+                    <button class="modal-close"><i class='bx bx-x-circle'></i></button>
+                </div>
+                <div class="add-lyric-content">
+                    <textarea name="" rows="15" disabled>
+                    Vứt, vứt buồn phiền vào đây
+                    Vứt chiếc hộp này đi
+                    Cho một đêm đã qua
+                    Cho từng lời được nói
+                    Mặt trời chói thêm nắng lên da
+                    Dặn bản thân liên tục bước tới
+                    Vì trong góc tối còn người bên ta
+                    Vứt buồn phiền vào đây
+                    Vứt, vứt buồn phiền vào đây
+                    Vứt buồn phiền vào đây
+                    Vứt, vứt buồn phiền vào đây
+                    Vứt chiếc hộp này đi
+                    Và ngày mới trôi qua nào hay
+                    Vứt buồn phiền vào đây
+                    Ngày mới trôi qua nào hay
+                    </textarea>
+                </div>
+            </div>
+        </div>
+
+    <!-- modal -->
+    <div class="modal" id="new-post">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">New post</h3>
+                <button class="modal-close"><i class='bx bx-x-circle'></i></button>
+            </div>
+            <div class="modal-body">
+                <form action="" method="post">
+                    <div class="form-new-post">
+                        <p class="center">How do you feel today ?</p>
+                        <div class="feeling">
+                            <div class="feeling-item active">
+                                <img src="./images/icon/smile.svg" alt="">
+                                <span>Happy</span>
+                            </div>
+                            <div class="feeling-item">
+                                <img src="./images/icon/sad.svg" alt="">
+                                <span>Sad</span>
+                            </div>
+                            <div class="feeling-item">
+                                <img src="./images/icon/angry.svg" alt="">
+                                <span>Angry</span>
+                            </div>
+                            <div class="feeling-item">
+                                <img src="./images/icon/heart.svg" alt="">
+                                <span>Excited</span>
+                            </div>
+                            <div class="feeling-item">
+                                <img src="./images/icon/omg.svg" alt="">
+                                <span>Scary</span>
+                            </div>
+                        </div>
+                        <!-- end feeeling -->
+                        <div class="div-story">
+                            <textarea name="" placeholder="Your story" id="" rows="5"></textarea>
+                        </div>
+                        <div>
+                            <button class="btn-search-song"><i class='bx bx-search'></i> 
+                                <span>Choose a song that expresses your mood</span>
+                            </button>
+                        </div>
+                        <div>
+                            <button type="submit" class="btn-add-post">Post</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- theme choose song -->
+    <div class="theme-choose-song">
+        <div class="form-choose-song">
+            <h2>Choose a song that expresses your mood</h2>
+            <form action="" method="post">
+                <input type="text" placeholder="Choose a song that expresses your mood">
+                <i class='bx bx-search'></i>
+            </form>
+            <div class="form-result">
+                <table class="form-result-table" cellpadding="0" cellspacing="0">
+                    <tr id="row1">
+                        <td><img class="is-50-50 is-rounded" src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/5/1/0/5/5105ad15cebc8a0d3d8a055f0d88764e.jpg" alt=""></td>
+                        <td>
+                            <div>
+                                <p class="title">You are the reason</p>
+                                <span>John David</span>
+                            </div>
+                        </td>
+                        <td class="form-check">
+                            <i class='bx bx-check'></i>
+                        </td>
+                    </tr>
+                    <tr id="row2">
+                        <td><img class="is-50-50 is-rounded" src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/5/1/0/5/5105ad15cebc8a0d3d8a055f0d88764e.jpg" alt=""></td>
+                        <td>
+                            <div>
+                                <p class="title">You are the reason</p>
+                                <span>John David</span>
+                            </div>
+                        </td>
+                        <td class="form-check">
+                            <i class='bx bx-check'></i>
+                        </td>
+                    </tr>
+                    <tr id="row3">
+                        <td><img class="is-50-50 is-rounded" src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/5/1/0/5/5105ad15cebc8a0d3d8a055f0d88764e.jpg" alt=""></td>
+                        <td>
+                            <div>
+                                <p class="title">You are the reason</p>
+                                <span>John David</span>
+                            </div>
+                        </td>
+                        <td class="form-check">
+                            <i class='bx bx-check'></i>
+                        </td>
+                    </tr>
+                    <tr id="row4">
+                        <td><img class="is-50-50 is-rounded" src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/5/1/0/5/5105ad15cebc8a0d3d8a055f0d88764e.jpg" alt=""></td>
+                        <td>
+                            <div>
+                                <p class="title">You are the reason</p>
+                                <span>John David</span>
+                            </div>
+                        </td>
+                        <td class="form-check">
+                            <i class='bx bx-check'></i>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="form-choose-song-end">
+                <button class="zm-btn-close"><i class='bx bx-arrow-back' ></i> Back</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPT -->
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- OWL CAROUSEL -->
+    <!-- APP SCRIPT -->
+    <script src="app.js"></script>
+
+</body>
+
+</html>
