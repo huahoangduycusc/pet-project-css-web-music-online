@@ -64,7 +64,7 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1099;
+  z-index: 90;
   background-color: #000000;
 }
 
@@ -2507,4 +2507,106 @@ ul.menu-list li i {
 }
 .news-item:hover .news-item-title{
   color: #db4e16;
+}
+/* ========================= play list ==================== */
+.playlist{
+  background-color: hsla(0,0%,100%,.1);
+  border-radius: 4px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 5px;
+  border: 1px solid transparent;
+  font-weight: 500;
+  color: #fff;
+}
+.playlist i{
+  font-size: 20px !important;
+}
+.playlist.active{
+  background-color: #9e4fc0;
+}
+.divide{
+  width: 1px;
+  height: 33px;
+  display: block;
+  margin: 0 20px;
+  background-color: hsla(0,0%,100%,0.4);
+}
+/* ==================== navbar right =============== */
+.playlist-navbar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 90px;
+  width: 320px;
+  z-index: 102;
+  background-color: rgb(31, 52, 119);
+  transform: translateX(320px);
+  transition: transform 0.3s ease;
+  overflow-y: auto;
+}
+.playlist-navbar::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+  border-radius: 5px;
+}
+.playlist-navbar::-webkit-scrollbar-thumb {
+  background: rgb(154, 180, 228);
+  border-radius: 10px;
+}
+.playlist-navbar.open{
+  transform: translateX(0px);
+}
+.playlist-container{
+  width: 100%;
+}
+.playlist-container .playlist-header{
+  text-align: center;
+  margin-top: 15px;
+  padding: 14px 0;
+  letter-spacing: 1px;
+  border-radius: 999px;
+  padding: 5px 0;
+  cursor: pointer;
+  background-color: hsla(0,0%,100%,0.1);
+}
+.is-30-30{
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+}
+.playlist-content{
+  width: 100%;
+  overflow-x: hidden;
+}
+.playlist-content-item{
+  padding: 0 10px;
+}
+.playlist-content-item:hover{
+  background-color: rgb(81, 124, 211);
+}
+.ms-play{
+  position: relative;
+  display: inline-block;
+}
+.ms-play .btn-bs-play{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 22px;
+  transform: translate(-50%,-50%);
+  display: none;
+}
+.playlist-content-item:hover .thumbnail-music{
+  opacity: 0.6;
+}
+.playlist-content-item:hover .media-content{
+  opacity: 0.6;
+}
+.playlist-content-item:hover .ms-play .btn-bs-play{
+  display: flex;
+  opacity: 1 !important;
+}
+.playlist-navbar .media-title, .media-subtitle {
+  white-space: unset;
 }

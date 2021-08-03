@@ -37,32 +37,25 @@ $(document).ready(() => {
         }
     }
 
-    const checkAudioPath = localStorage.getItem('myAudioPath'); // get time current
-    if (checkAudioPath) {
-        $(".audioplayer").remove();
-        var myAudioPath = localStorage.getItem('myAudioPath');
-        var audio = document.createElement('AUDIO');
-        audio.setAttribute('controls', true);
-        var source = document.createElement('source');
-        source.src = myAudioPath;
-        audio.appendChild(source)
-        $('.player-control_center').append(audio);
-        //$(function () { $('audio').audioPlayer(); });
-    }
 
     /// play music
     $('.btn-play').on('click', function (e) {
         e.preventDefault();
         var src = $(this).attr('data-src');
+        sttBefore = $(this).attr('id');
+        sttPlay = 0;
         $("#music_src").attr('src', src);
         $(".audioplayer").remove();
         var audio = document.createElement('AUDIO');
         audio.setAttribute('controls', true);
+        audio.setAttribute('id', "audioMs");
         var source = document.createElement('source');
+        source.setAttribute("id", "playMs");
         source.src = src;
         audio.appendChild(source)
         $('.player-control_center').append(audio);
         $(function () { $('audio').audioPlayer(); });
+        console.log(sttBefore);
     });
 
     // like song
@@ -85,9 +78,9 @@ $(document).ready(() => {
         e.preventDefault();
         $(".modal").removeClass("open");
     });
-    $(".modal").on('click',(e) => {
+    $(".modal").on('click', (e) => {
         var div = e.target.classList;
-        if(div.contains("modal")){
+        if (div.contains("modal")) {
             $(".modal").removeClass("open");
         }
     });
@@ -227,4 +220,32 @@ $(document).ready(() => {
             }
         }
     })
-})
+});
+
+var playlist = [
+    {
+        'id': 1,
+        'audio': 'audio.mp3',
+    },
+    {
+        'id': 2,
+        'audio': 'music2.mp3',
+    },
+    {
+        'id': 3,
+        'audio': 'lemon.mp3',
+    },
+    {
+        'id': 4,
+        'audio': 'hotaru.mp3',
+    }
+];
+var sttPlay = 0;
+var sttBefore = 0;
+console.log(playlist);
+
+$(".playlist").on('click',function(e){
+    e.preventDefault();
+    $(this).toggleClass("active");
+    $(".playlist-navbar").toggleClass("open");
+});
