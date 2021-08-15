@@ -194,10 +194,10 @@ $(document).ready(() => {
                 items: 2
             },
             1280: {
-                items: 5
+                items: 4
             },
             1600: {
-                items: 6
+                items: 4
             }
         }
     });
@@ -216,7 +216,7 @@ $(document).ready(() => {
                 items: 4
             },
             1600: {
-                items: 5
+                items: 4
             }
         }
     })
