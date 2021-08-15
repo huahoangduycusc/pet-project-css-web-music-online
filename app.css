@@ -2414,7 +2414,7 @@ ul.menu-list li i {
   position: relative;
   padding: 40px;
 }
-.section-top{
+.section-top {
   position: relative;
   width: fit-content;
   text-transform: capitalize;
@@ -2431,28 +2431,28 @@ ul.menu-list li i {
   bottom: 0;
   right: 0;
   z-index: 0;
-  background: url('./week-chart-bg.edf332e5.jpg') top/cover no-repeat;
+  background: url("./week-chart-bg.edf332e5.jpg") top/cover no-repeat;
   filter: grayscale(1);
 }
-.section-chart .bg-alpha{
+.section-chart .bg-alpha {
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: rgba(32,19,53,0.9);
+  background-color: rgba(32, 19, 53, 0.9);
 }
-.section-header{
+.section-header {
   position: relative;
 }
-.week-chart{
+.week-chart {
   position: relative;
-  background-color: hsla(0,0%,100%,0.05);
+  background-color: hsla(0, 0%, 100%, 0.05);
   padding: 20px 10px;
   border-radius: 16px;
   margin-bottom: 15px;
 }
-.week-chart .chart-header{
+.week-chart .chart-header {
   display: flex;
   flex-direction: row;
   padding: 0 0 10px 40px;
@@ -2460,10 +2460,10 @@ ul.menu-list li i {
   font-weight: 700;
   line-height: normal;
 }
-.list-week-chart{
+.list-week-chart {
   padding: 10px 5px;
 }
-.show-all{
+.show-all {
   border-radius: 999px;
   border: 1px solid #fff;
   font-size: 14px;
@@ -2473,8 +2473,8 @@ ul.menu-list li i {
   color: #fff;
   padding: 8px 25px;
 }
-.show-all:hover{
-  background-color: hsla(0,0%,100%,0.1);
+.show-all:hover {
+  background-color: hsla(0, 0%, 100%, 0.1);
 }
 .is-center {
   display: flex;
@@ -2482,35 +2482,35 @@ ul.menu-list li i {
   justify-content: center;
   align-items: center;
 }
-.list-week-chart td{
+.list-week-chart td {
   padding: 5px 0;
 }
-.list-week-chart tr:hover td{
-  background-color: hsla(0,0%,100%,0.1);
+.list-week-chart tr:hover td {
+  background-color: hsla(0, 0%, 100%, 0.1);
 }
 /* ================ NEWSS CSS ================== */
-.news-item img{
+.news-item img {
   border-radius: 10px;
 }
-.news-item .news-item-content .news-item-catgeory{
+.news-item .news-item-content .news-item-catgeory {
   margin-bottom: 10px;
   margin-top: 10px;
   font-size: 13px;
   font-weight: 600;
   text-transform: uppercase;
 }
-.news-item .news-item-content .news-item-catgeory .span-category{
+.news-item .news-item-content .news-item-catgeory .span-category {
   margin-right: 10px;
 }
-.news-item .news-item-title{
+.news-item .news-item-title {
   transition: all 0.3s ease;
 }
-.news-item:hover .news-item-title{
+.news-item:hover .news-item-title {
   color: #db4e16;
 }
 /* ========================= play list ==================== */
-.playlist{
-  background-color: hsla(0,0%,100%,.1);
+.playlist {
+  background-color: hsla(0, 0%, 100%, 0.1);
   border-radius: 4px;
   height: 30px;
   line-height: 30px;
@@ -2519,21 +2519,21 @@ ul.menu-list li i {
   font-weight: 500;
   color: #fff;
 }
-.playlist i{
+.playlist i {
   font-size: 20px !important;
 }
-.playlist.active{
+.playlist.active {
   background-color: #9e4fc0;
 }
-.divide{
+.divide {
   width: 1px;
   height: 33px;
   display: block;
   margin: 0 20px;
-  background-color: hsla(0,0%,100%,0.4);
+  background-color: hsla(0, 0%, 100%, 0.4);
 }
 /* ==================== navbar right =============== */
-.playlist-navbar{
+.playlist-navbar {
   position: fixed;
   top: 0;
   right: 0;
@@ -2554,13 +2554,13 @@ ul.menu-list li i {
   background: rgb(154, 180, 228);
   border-radius: 10px;
 }
-.playlist-navbar.open{
+.playlist-navbar.open {
   transform: translateX(0px);
 }
-.playlist-container{
+.playlist-container {
   width: 100%;
 }
-.playlist-container .playlist-header{
+.playlist-container .playlist-header {
   text-align: center;
   margin-top: 15px;
   padding: 14px 0;
@@ -2568,45 +2568,214 @@ ul.menu-list li i {
   border-radius: 999px;
   padding: 5px 0;
   cursor: pointer;
-  background-color: hsla(0,0%,100%,0.1);
+  background-color: hsla(0, 0%, 100%, 0.1);
 }
-.is-30-30{
+.is-30-30 {
   width: 40px;
   height: 40px;
   border-radius: 5px;
 }
-.playlist-content{
+.playlist-content {
   width: 100%;
   overflow-x: hidden;
 }
-.playlist-content-item{
+.playlist-content-item {
   padding: 0 10px;
 }
-.playlist-content-item:hover{
+.playlist-content-item:hover {
   background-color: rgb(81, 124, 211);
 }
-.ms-play{
+.ms-play {
   position: relative;
   display: inline-block;
 }
-.ms-play .btn-bs-play{
+.ms-play .btn-bs-play {
   position: absolute;
   top: 50%;
   left: 50%;
   font-size: 22px;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   display: none;
 }
-.playlist-content-item:hover .thumbnail-music{
+.playlist-content-item:hover .thumbnail-music {
   opacity: 0.6;
 }
-.playlist-content-item:hover .media-content{
+.playlist-content-item:hover .media-content {
   opacity: 0.6;
 }
-.playlist-content-item:hover .ms-play .btn-bs-play{
+.playlist-content-item:hover .ms-play .btn-bs-play {
   display: flex;
   opacity: 1 !important;
 }
-.playlist-navbar .media-title, .media-subtitle {
+.playlist-navbar .media-title,
+.media-subtitle {
   white-space: unset;
+}
+/* ============== full screen ============= */
+.fullscreen-fixed {
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  height: calc(100vh - 90px);
+  width: 100%;
+  transform: translateY(120%);
+  transition: transform 0.4s linear;
+}
+.fullscreen-fixed.open{
+  transform: translateY(0);
+}
+.fullscreen {
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.fullscreen .fullscreen-header {
+  position: relative;
+  margin: 50px 0;
+}
+.fullscreen-tab {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  background-color: hsla(0, 0%, 100%, 0.1);
+  border-radius: 15px;
+  padding: 3px;
+  width: max-content;
+  margin: auto;
+  position: relative;
+}
+.fullscreen-tab .fullscreen-tab-item {
+  font-size: 16px;
+  color: hsla(0, 0%, 100%, 0.5);
+  padding: 7px 50px;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+}
+.fullscreen-tab .fullscreen-tab-item.is-active {
+  background-color: hsla(0, 0%, 100%, 0.1);
+  border-radius: 999px;
+}
+.fullscreen .fullscreen-close {
+  position: absolute;
+  z-index: 10;
+  top: 50px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  background-color: #3b3b3b;
+  border-radius: 50%;
+  outline: none;
+  color: #fff;
+  border: 1px solid #444;
+  font-size: 25px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.fullscreen .fullscreen-close:hover{
+  background-color: #b8b8b8;
+}
+.fullscreen-image {
+  position: absolute;
+  background: url("https://zjs.zadn.vn/zmp3-desktop/releases/v1.3.1/static/media/week-chart-bg.edf332e5.jpg")
+    no-repeat center;
+  background-size: cover;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+}
+.fullscreen-blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(41, 21, 71, 0.8);
+}
+.fullscreen-body {
+  z-index: 3;
+  position: relative;
+  display: flex;
+}
+.fullscreen-body .fullscreen-lyrics{
+  max-height: 500px;
+  overflow: hidden auto;
+  font-size: 42px;
+  text-align: left;
+  white-space: pre-line;
+}
+.fullscreen-body .fullscreen-lyrics::-webkit-scrollbar {
+  width: 5px;
+  background-color: none;
+  border-radius: 5px;
+}
+.fullscreen-body .fullscreen-lyrics::-webkit-scrollbar-thumb {
+  background: hsla(0, 0%, 100%, 0.1);
+  border-radius: 10px;
+  height: 30px;
+}
+.fullscreen-body .fullscreen-playlist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fullscreen-body .fullscreen-playlist .fullscreen-track {
+  position: relative;
+}
+.fullscreen-body .fullscreen-playlist .fullscreen-track img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  animation-play-state: paused;
+  animation-name: spin;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+body.playing .fullscreen-track img {
+  animation-play-state: running !important;
+}
+.fullscreen-body .fullscreen-playlist .fullscreen-track .track-cd {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(27, 27, 27);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.fullscreen-body .fullscreen-playlist .fullscreen-songname {
+  font-size: 22px;
+  margin-top: 10px;
+  font-weight: 700;
+}
+.fullscreen-body .fullscreen-playlist .fullscreen-artist {
+  margin-top: 10px;
+  font-size: 17px;
+}
+.fullscreen-jtem.hide{
+  display: none;
+}
+.fullscreen-jtem.open{
+  display: flex;
+}
+.expend-fullcreen{
+  margin-left: 10px;
+}
+@media screen and (max-width: 767px) {
+  .expend-fullcreen{
+    display: none;
+  }
 }

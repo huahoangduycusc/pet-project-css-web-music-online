@@ -249,3 +249,21 @@ $(".playlist").on('click',function(e){
     $(this).toggleClass("active");
     $(".playlist-navbar").toggleClass("open");
 });
+
+$(".fullscreen-tab-item").on('click',function(e){
+    $(".fullscreen-tab-item").removeClass("is-active");
+    $(this).addClass("is-active");
+    var item = $(this).attr("data-item");
+    console.log(item);
+    $(".fullscreen-jtem").removeClass("open").addClass("hide");
+    $("."+item).addClass("open");
+});
+
+// expend full screen
+$(".expend-fullcreen").on('click',function(e){
+    e.preventDefault();
+    $(".fullscreen-fixed").toggleClass("open");
+});
+$(".fullscreen-close").on('click',function(e){
+    $(".fullscreen-fixed").removeClass("open");
+});
